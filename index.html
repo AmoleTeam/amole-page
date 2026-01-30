@@ -24,12 +24,12 @@
         theme: {
           extend: {
             colors: {
-              primary: "#49ec13",
-              guacamole: "#4A6741",
+              primary: "#9CC9A1",
+              guacamole: "#5E7C6B",
               charcoal: "#1A1A1A",
               cream: "#F9F8F4",
               "background-light": "#F9F8F4",
-              "background-dark": "#152210",
+              "background-dark": "#1E2B24",
             },
             fontFamily: {
               display: ["Plus Jakarta Sans", "sans-serif"],
@@ -116,10 +116,54 @@
             href="https://api.whatsapp.com/send?phone=573122046328&text=Hola%20AMOLE%2C%20quiero%20hacer%20un%20pedido."
             target="_blank"
             rel="noopener"
+            style="text-align: center"
           >
             Pedir por WhatsApp
           </a>
-          <span class="material-symbols-outlined md:hidden">menu</span>
+          <details class="relative md:hidden">
+            <summary
+              class="list-none flex items-center justify-center w-10 h-10 rounded-full border border-charcoal/20 dark:border-cream/20"
+              aria-label="Abrir menú"
+            >
+              <span class="material-symbols-outlined">menu</span>
+            </summary>
+            <div
+              class="absolute right-0 mt-3 w-56 rounded-2xl border border-charcoal/10 dark:border-cream/10 bg-background-light dark:bg-background-dark shadow-xl p-3 flex flex-col gap-2"
+            >
+              <a
+                class="text-sm font-semibold px-3 py-2 rounded-lg hover:bg-charcoal/5 dark:hover:bg-cream/10"
+                href="#inicio"
+                >Inicio</a
+              >
+              <a
+                class="text-sm font-semibold px-3 py-2 rounded-lg hover:bg-charcoal/5 dark:hover:bg-cream/10"
+                href="#proceso"
+                >Nuestro proceso</a
+              >
+              <a
+                class="text-sm font-semibold px-3 py-2 rounded-lg hover:bg-charcoal/5 dark:hover:bg-cream/10"
+                href="#precios"
+                >Tamaños</a
+              >
+              <a
+                class="text-sm font-semibold px-3 py-2 rounded-lg hover:bg-charcoal/5 dark:hover:bg-cream/10"
+                href="#galeria"
+                >Galería</a
+              >
+              <a
+                class="text-sm font-semibold px-3 py-2 rounded-lg hover:bg-charcoal/5 dark:hover:bg-cream/10"
+                href="#faq"
+                >Preguntas</a
+              >
+              <a
+                class="text-sm font-bold text-center px-3 py-2 rounded-lg bg-primary text-charcoal"
+                href="https://api.whatsapp.com/send?phone=573122046328&text=Hola%20AMOLE%2C%20quiero%20hacer%20un%20pedido."
+                target="_blank"
+                rel="noopener"
+                >Pedir por WhatsApp</a
+              >
+            </div>
+          </details>
         </div>
       </div>
     </header>
@@ -332,6 +376,7 @@
               href="https://api.whatsapp.com/send?phone=573122046328&text=Hola%20AMOLE%2C%20quiero%20pedir%20el%20tama%C3%B1o%20Snack%20130g."
               target="_blank"
               rel="noopener"
+              style="text-align: center"
             >
               Pedir ahora
             </a>
@@ -366,6 +411,7 @@
               href="https://api.whatsapp.com/send?phone=573122046328&text=Hola%20AMOLE%2C%20quiero%20pedir%20el%20tama%C3%B1o%20Pareja%20250g."
               target="_blank"
               rel="noopener"
+              style="text-align: center"
             >
               Pedir ahora
             </a>
@@ -405,6 +451,7 @@
               href="https://api.whatsapp.com/send?phone=573122046328&text=Hola%20AMOLE%2C%20quiero%20pedir%20el%20tama%C3%B1o%20Social%20450g."
               target="_blank"
               rel="noopener"
+              style="text-align: center"
             >
               Pedir por WhatsApp
             </a>
@@ -439,11 +486,13 @@
               href="https://api.whatsapp.com/send?phone=573122046328&text=Hola%20AMOLE%2C%20quiero%20pedir%20el%20tama%C3%B1o%20Party%20750g."
               target="_blank"
               rel="noopener"
+              style="text-align: center"
             >
               Pedir ahora
             </a>
           </div>
         </div>
+        rgb
       </div>
     </section>
     <!-- Photo Gallery -->
@@ -532,44 +581,68 @@
         </p>
       </div>
       <div class="flex flex-col gap-4">
-        <div class="border-b border-charcoal/10 dark:border-cream/10 pb-4">
-          <button
-            class="flex justify-between items-center w-full py-4 text-left"
+        <details class="border-b border-charcoal/10 dark:border-cream/10 pb-4">
+          <summary
+            class="flex justify-between items-center w-full py-4 text-left cursor-pointer"
           >
             <span class="font-bold text-lg">¿Cómo realizo un pedido?</span>
             <span class="material-symbols-outlined">add</span>
-          </button>
-        </div>
-        <div class="border-b border-charcoal/10 dark:border-cream/10 pb-4">
-          <button
-            class="flex justify-between items-center w-full py-4 text-left"
+          </summary>
+          <p
+            class="text-charcoal/70 dark:text-cream/70 text-sm leading-relaxed"
+          >
+            Escríbenos por WhatsApp con el tamaño que quieres, tu barrio/zona y
+            la hora aproximada. Te confirmamos disponibilidad, total y envío.
+          </p>
+        </details>
+        <details class="border-b border-charcoal/10 dark:border-cream/10 pb-4">
+          <summary
+            class="flex justify-between items-center w-full py-4 text-left cursor-pointer"
           >
             <span class="font-bold text-lg"
               >¿Cuáles son las zonas de cobertura?</span
             >
             <span class="material-symbols-outlined">add</span>
-          </button>
-        </div>
-        <div class="border-b border-charcoal/10 dark:border-cream/10 pb-4">
-          <button
-            class="flex justify-between items-center w-full py-4 text-left"
+          </summary>
+          <p
+            class="text-charcoal/70 dark:text-cream/70 text-sm leading-relaxed"
+          >
+            Entregamos en Medellín y Área Metropolitana. Envíanos tu ubicación
+            por WhatsApp para confirmar el costo y el tiempo de entrega.
+          </p>
+        </details>
+        <details class="border-b border-charcoal/10 dark:border-cream/10 pb-4">
+          <summary
+            class="flex justify-between items-center w-full py-4 text-left cursor-pointer"
           >
             <span class="font-bold text-lg"
               >¿Cuánto tiempo dura el producto?</span
             >
             <span class="material-symbols-outlined">add</span>
-          </button>
-        </div>
-        <div class="border-b border-charcoal/10 dark:border-cream/10 pb-4">
-          <button
-            class="flex justify-between items-center w-full py-4 text-left"
+          </summary>
+          <p
+            class="text-charcoal/70 dark:text-cream/70 text-sm leading-relaxed"
+          >
+            Recomendamos consumirlo en 3 a 5 días refrigerado y siempre mantener
+            el envase bien cerrado para conservar la frescura.
+          </p>
+        </details>
+        <details class="border-b border-charcoal/10 dark:border-cream/10 pb-4">
+          <summary
+            class="flex justify-between items-center w-full py-4 text-left cursor-pointer"
           >
             <span class="font-bold text-lg"
               >¿Ofrecen opciones para eventos grandes?</span
             >
             <span class="material-symbols-outlined">add</span>
-          </button>
-        </div>
+          </summary>
+          <p
+            class="text-charcoal/70 dark:text-cream/70 text-sm leading-relaxed"
+          >
+            Sí. Para eventos o pedidos grandes podemos coordinar cantidades y
+            horarios especiales. Escríbenos por WhatsApp para cotizar.
+          </p>
+        </details>
       </div>
     </section>
     <!-- Footer -->
@@ -617,7 +690,9 @@
             <a class="text-sm hover:text-primary transition-colors" href="#faq"
               >Preguntas frecuentes</a
             >
-            <a class="text-sm hover:text-primary transition-colors" href="#precios"
+            <a
+              class="text-sm hover:text-primary transition-colors"
+              href="#precios"
               >Tamaños</a
             >
           </div>
